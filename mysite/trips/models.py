@@ -10,3 +10,7 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+class Tag(models.Model):
+    info = models.CharField(max_length=512)
+    post = models.ForeignKey(Post)

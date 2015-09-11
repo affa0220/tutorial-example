@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+        <form action="" method="post">
+            <table>
+                <tr>
+                    <td>Title:</td><td> <input id="id_title" name="title" value="{{ post.title }}" /></td>
+                </tr>
+                <tr>
+                    <td>Content:</td><td> <textarea id="id_content" name="content" style="width: 300px; height: 300px">{{ post.content }}</textarea></td>
+                </tr>
+                <tr>
+                    <td>Photo Url:</td><td> <input id="id_photo" name="photo" value="{{ post.photo }}" /></td>
+                </tr>
+                <tr>
+                    <td>Location:</td><td> <input id="id_location" name="location" value="{{ post.location }}" /></td>
+                </tr>
+            </table>
+            <input type="hidden" name="sub" value="yes">
+            <input type="submit" value="更新內容">
+        </form>
+</body>
+</html>

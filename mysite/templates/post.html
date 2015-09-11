@@ -16,7 +16,7 @@
     <div class="container post post-detail">
         <div class="post-heading">
             <h1 class="title"><a href="{% url 'post_detail' id=post.id %}">{{ post.title }}</a>
-            </h1>
+            </h1><div><a href="/editcontent/{{ post.id }}">修改內容</a></div>
             <div class="date">{{ post.created_at|date:'Y / m / d' }}</div>
         </div>
         <div class="location">
